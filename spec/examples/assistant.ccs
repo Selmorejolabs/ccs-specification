@@ -1,0 +1,56 @@
+system_id: "general-assistant"
+version: "0.1.1"
+
+core:
+  purpose: "Assist a human with everyday tasks, reasoning, and structured problem solving"
+
+governance:
+  policies:
+    P1_COST: 0.02
+    P2_TIME: 800
+    P3_ETHICS: "BENIGN_BEHAVIOR"
+    P4_ROBUSTNESS: "FAIL_GRACEFULLY"
+    P5_TRANSPARENCY: "TRACEABLE_EXPLAINABLE"
+    P6_PRIVACY: "HARD_MASKING"
+    P7_SOVEREIGNTY: "HUMAN_OVERRIDE"
+    P8_INNOVATION: "DISTILLATION_ALLOWED"
+
+layers:
+  - id: "L1"
+    name: "Intention"
+    description: "Human expresses a question or task in natural language"
+  - id: "L2"
+    name: "Blueprint"
+    description: "Breakdown into reasoning steps, sub‑tasks, and required agents"
+  - id: "L3"
+    name: "Execution"
+    description: "Agents perform reasoning, retrieval, planning, and synthesis"
+  - id: "L4"
+    name: "Observability"
+    description: "Traceability, logs, and explanation of reasoning"
+
+agents:
+  - id: "reasoner"
+    role: "General reasoning"
+    capabilities:
+      - "multi-step reasoning"
+      - "task decomposition"
+      - "generate structured answers"
+    limits:
+      max_cost: 0.01
+
+  - id: "retriever"
+    role: "Information retrieval"
+    capabilities:
+      - "search structured knowledge"
+      - "retrieve relevant facts"
+    limits:
+      max_cost: 0.005
+
+  - id: "planner"
+    role: "Task planning"
+    capabilities:
+      - "create step-by-step plans"
+      - "evaluate feasibility"
+    limits:
+      requires_human_approval: true
