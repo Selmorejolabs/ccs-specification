@@ -1,80 +1,63 @@
-# Cognitive Component Specification (CCS)
-### v0.1.1 — Open Standard
+# Cognitive Control System (CCS) — Estándar Público
 
-CCS is an open standard for describing cognitive systems built from components:
-cores, layers, agents, and full organisms, governed by a fractal constitution and
-deterministic traceability.
+El Cognitive Control System (CCS) es un estándar abierto para la construcción de sistemas cognitivos modulares basados en agentes especializados.  
+Este repositorio contiene la **documentación oficial del estándar**, no su implementación.
 
-This repository contains the official specification of the standard, usage examples,
-and the formal grammar.
+------------------------------------------------------------
+# 1. Propósito del repositorio
 
----
+Este repositorio define:
 
-## 📘 What is CCS?
+- la arquitectura conceptual del CCS  
+- los principios de diseño  
+- las partes P01–P04 del estándar  
+- el ciclo cognitivo general  
+- los roles y responsabilidades de cada agente  
+- la filosofía del sistema  
+- el roadmap institucional  
 
-CCS (Cognitive Component Specification) is a declarative language designed to:
+El objetivo es proporcionar una base clara, abierta y extensible para cualquier organización que desee estudiar, adoptar o inspirarse en el estándar CCS.
 
-- Describe **human intentions** in a structured way
-- Define **cognitive blueprints**
-- Specify **agents**, their **capabilities**, and their **constraints**
-- Establish **governance policies (P1–P8)**
-- Guarantee **full traceability** through `Trace_ID`
-- Enable the construction of **provider‑independent cognitive organisms**
+------------------------------------------------------------
+# 2. Qué NO contiene este repositorio
 
-CCS is not a programming language.
-It is a **cognitive architecture language**.
+Este repositorio **no** contiene:
 
----
+- agentes operativos  
+- prompts  
+- protocolos ejecutables  
+- memoria operativa  
+- tests reales  
+- código de implementación  
+- integración UACP  
+- scripts de despliegue  
 
-## 📂 Repository Structure
+La implementación real del CCS es **propietaria** y se desarrolla en el proyecto privado **Orchestix**.
 
-CCS-SPECIFICATION/
-│
-├── spec/
-│   ├── ccs-v0.1.1.md      # Main specification
-│   └── ccs-ebnf.md        # Formal grammar (EBNF)
-│
-├── examples/              # Practical CCS examples
-├── compliance/            # Validation and conformance materials
-├── roadmap/               # Evolution and future versions
-│
-├── README.md
-└── LICENSE
+------------------------------------------------------------
+# 3. Relación entre CCS y Orchestix
 
----
+- **CCS** → estándar público, documentación conceptual  
+- **Orchestix** → implementación privada del estándar  
 
-## 🚀 Purpose of This Repository
+CCS define el marco.  
+Orchestix ejecuta el marco.
 
-This repository serves as the **official reference implementation** of the CCS standard.
-It provides:
+------------------------------------------------------------
+# 4. Estructura del repositorio
 
-- The **canonical specification**
-- The **formal grammar**
-- A set of **validated examples**
-- A **compliance guide**
-- A **roadmap** for future versions
+- `/docs` — documentación del estándar  
+- `/roadmap` — evolución institucional del CCS  
+- `README.md` — visión general del estándar  
 
----
+------------------------------------------------------------
+# 5. Licencia
 
-## 🧩 Who Is CCS For?
+El estándar CCS es público, pero su implementación es privada.  
+Consulta la licencia incluida para más detalles.
 
-CCS is intended for:
+------------------------------------------------------------
+# 6. Estado del estándar
 
-- Cognitive system architects
-- AI researchers
-- Agent‑based system designers
-- Organizations building **traceable**, **auditable**, and **governed** cognitive systems
-- Developers who need **provider‑independent** cognitive specifications
-
----
-
-## 📄 License
-
-This project is released under the **MIT License**.
-
----
-
-## 🌱 Contributing
-
-CCS is an evolving open standard.
-Feedback and contributions are welcome.
+El estándar CCS está en evolución activa.  
+Nuevas versiones, diagramas y documentos se publicarán progresivamente.
